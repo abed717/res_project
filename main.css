@@ -1,0 +1,969 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+nav {
+
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+}
+
+nav img {
+
+    width: 100px;
+    height: 100%;
+}
+
+nav .container {
+
+
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+nav .container .start {
+    width: 40%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+nav .container .end {
+    width: 30%;
+}
+
+nav .container {
+
+    display: flex;
+}
+
+.navlist {
+    width: 100%;
+}
+
+.navlist ul {
+    list-style: none;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+}
+
+nav .container .end {
+
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+
+
+}
+
+header {
+
+    background-image: url(images/backhead.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.head {
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    color: white;
+    gap: 20px;
+
+}
+
+.head img {
+    width: 400px;
+    height: 200px;
+}
+
+.head h1 {
+
+    font-size: 80px;
+    font-weight: 400;
+    font-family: "Alegreya Sans", sans-serif;
+}
+
+.head p {
+
+    font-size: 40px;
+    font-weight: 400;
+    font-family: "Dancing Script", cursive;
+}
+
+.buttons {
+
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.buttons button {
+    padding: 20px;
+    border: 2px black solid;
+    border-radius: 10px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: #403d38;
+}
+
+footer .container {
+    display: flex;
+    flex-direction: column;
+}
+
+footer .container .mainfooter {
+    position: relative;
+    top: 70px;
+    display: flex;
+    justify-content: space-between;
+    height: 50vh;
+    width: 80%;
+
+}
+
+.mf {
+    display: flex;
+    justify-content: center;
+}
+
+.footersection1,
+.footersection4 {
+
+    width: 25%;
+
+}
+
+.mainfooter h3 {
+
+    color: rgb(255, 255, 255);
+
+}
+
+.mainfooter p {
+
+    color: #8e9396;
+}
+
+footer .container .subfooter {
+
+    background-color: #353330;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 50vh;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    gap: 20px;
+
+}
+
+footer .container .subfooter img {
+    width: 400px;
+    height: 200px;
+
+}
+
+footer .container .subfooter button i {
+    color: antiquewhite;
+}
+
+footer .container .subfooter p {
+
+    font-size: large;
+    color: #777777;
+}
+
+footer .container .subfooter button {
+
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    background-color: #484540;
+    border: none;
+}
+
+.sec {
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sec ul {
+
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: #8e9396;
+}
+
+.sec a {
+
+    color: #8e9396;
+}
+
+.sec ul li {
+
+    border-bottom: 2px rgb(74 71 66) solid;
+    padding: 10px;
+
+}
+
+.sec ul li:last-of-type {
+
+    border-bottom: none;
+
+
+}
+
+.info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    height: 100vh;
+}
+
+.info .container {
+    width: 80%;
+    display: flex;
+
+
+}
+
+.info .container ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: #686868;
+
+}
+
+.info .container ul li {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.info .container ul li button {
+
+    background-color: #c1ab84;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 30px;
+}
+
+.info .container ul li button i {
+
+    font-size: 25px;
+}
+
+.datainfo {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 50%;
+    position: relative;
+    top: 150px;
+}
+
+.imageinfo {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+
+.datainfo h2 {
+
+    font-family: "Alegreya", serif;
+    font-size: 40px;
+    font-weight: 100;
+    color: #253048;
+
+}
+
+.datainfo .noteinfo {
+
+    font-family: "Dancing Script", cursive;
+    font-size: 30px;
+    color: #c1ab84;
+}
+
+.datainfo .note2info {
+
+    font-size: 20px;
+    color: #686868;
+}
+
+.datainfo ul li .item {
+
+    width: 5%;
+    height: 5%;
+    background-color: #d67b7b;
+}
+
+.review {
+
+    display: flex;
+    justify-content: center;
+    height: 70vh;
+    background-color: #f8f8f8;
+}
+
+.review .container {
+
+    width: 80%;
+    display: flex;
+}
+
+.review .container .revinfo {
+
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    gap: 30px;
+}
+
+.review .container .revinfo h2 {
+
+    font-family: "Alegreya", serif;
+    font-size: 40px;
+    font-weight: 100;
+    color: #253048;
+
+}
+
+.review .container .revinfo p {
+    font-size: 20px;
+    color: #686868;
+}
+
+.review .container .revinfo .revnote {
+
+    font-family: "Dancing Script", cursive;
+    font-size: 30px;
+    color: #c1ab84;
+}
+
+.review .container .revinfo ul {
+
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    list-style: none;
+}
+
+.review .container .revinfo ul li {
+
+    display: flex;
+    gap: 15px;
+    font-size: 20px;
+    color: #686868;
+
+}
+
+.review .container .revinfo ul li i {
+
+    font-size: 20px;
+}
+
+.review .container .revimage {
+
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+
+}
+
+.review .container .revimage img {
+
+    width: 75%;
+    height: 65%;
+}
+
+.banner {
+
+    width: 100%;
+    height: 50vh;
+}
+
+.banner img {
+
+    height: 100%;
+    width: 100%;
+}
+
+.menu {
+
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.menu .container {
+
+    width: 80%;
+    height: 150vh;
+}
+
+.menu .container .top {
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    height: 20%;
+    gap: 20px;
+
+}
+
+.menu .container .top p {
+
+    font-family: "Dancing Script", cursive;
+    font-size: 30px;
+    color: #c1ab84;
+}
+
+.menu .container .top h2 {
+
+    font-family: "Alegreya", serif;
+    font-size: 40px;
+    font-weight: 100;
+    color: #253048;
+
+}
+
+.menu .container .mid {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    gap: 40px;
+    height: 70%;
+    width: 100%;
+
+}
+
+.menu .container .mid .t {
+
+
+    width: 28%;
+    height: 44%;
+}
+
+.menu .container .mid .t .meal {
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.menu .container .mid .t .meal p {
+
+    font-size: 18px;
+    color: #686868;
+
+}
+
+.menu .container .mid .t .meal h4 {
+
+    font-family: "Alegreya", serif;
+    font-size: 27px;
+    font-weight: 100;
+    color: #253048;
+}
+
+.menu .container .mid .t .meal img {
+
+    width: 100%;
+    height: 90%;
+}
+
+.menu .container .mid .t .meal .div2 {
+
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.menu .container .bottom {
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    height: 10%;
+}
+
+.menu .container .bottom button {
+
+    width: 150px;
+    height: 50px;
+    border: none;
+    background-color: #c1ab84;
+    font-family: "Alegreya", serif;
+    color: white;
+    font-weight: 500;
+    font-size: 17px;
+}
+
+.banner2 {
+
+    height: 68vh;
+    width: 100%;
+    background-image: url(images/backhead.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    
+}
+.banner2 .container{
+    height: 70%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly ;
+}
+.banner2 .container .top{
+
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.banner2 .container .top i{
+
+    font-size: 45px;
+}
+.banner2 .container .top h3{
+
+    font-size: 30px;
+    color: white;
+}
+.banner2 .container .mid1{
+  
+    display: flex;
+    justify-content: center;
+     
+}
+.banner2 .container .submid1{
+
+     width: 70%;
+    color: white;
+    font-size: 25px;
+}
+.banner2 .container .mid2{
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.banner2 .container .mid2 p:nth-of-type(1){
+    
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: "Alegreya", serif;
+
+}
+.banner2 .container .mid2 p:nth-of-type(2){
+
+    color: #686868;
+    font-size: large;
+}
+
+
+
+@media (max-width: 768px) {
+   
+    nav .container .end{
+
+        position: absolute;
+        top: 0;
+      }
+      nav .container .end ul li a{
+          
+          color: white;
+      }
+      nav .container{
+        justify-content: center;
+    }
+    nav .container .start{
+        position: relative;
+        left: 45px;
+    }
+    .imageinfo img {
+
+        width: 100%;
+        height: 80%;
+
+    }
+
+    .info .container .datainfo {
+        
+        position: static;
+        
+
+    }
+    .info .container ul li button {
+
+        background-color: #c1ab84;
+        width: 20px;
+        height: 20px;
+        border: none;
+        border-radius: 30px;
+    }
+    .info .container ul li button i {
+
+        font-size: 15px;
+    }
+    .sec ul li {
+
+        font-size: 13px;
+        padding: 5px;
+    
+    }
+    .sec h3{
+        font-size: 15px;
+    }
+    .sec p{
+        font-size: 12.5px;
+    }
+    .menu .container {
+
+        
+        height: 130vh;
+    }
+    .menu .container .mid .t {
+
+
+        width: 28%;
+        height: 30%;
+    }
+    .menu .container .top p {  
+        font-size: 20px;
+      
+    }
+    
+    .menu .container .top h2 {
+
+        font-size: 25px;
+        
+    
+    }
+    .menu .container .mid .t .meal p {
+
+        font-size: 13px;
+    
+    }
+    
+    .menu .container .mid .t .meal h4 {
+    
+        font-size: 22px;
+       
+    }
+    .menu .container .bottom button {
+
+        width: 110px;
+        height: 25px;
+        font-size: 10px;
+      
+    }
+    .review{
+        height: 50vh;
+    }
+    .review .container .revinfo {
+
+        width: 50%;
+        gap: 10px;
+    }
+    
+    .review .container .revinfo h2 {
+    
+        font-size: 22px;
+    
+    }
+    
+    .review .container .revinfo p {
+        font-size: 12px;
+        
+    }
+    
+    .review .container .revinfo .revnote {
+
+        font-size: 17px;
+      
+    }
+    
+    .review .container .revinfo ul {
+        gap: 10px;
+ 
+    }
+    
+    .review .container .revinfo ul li {
+
+        gap: 15px;
+        font-size: 12px;
+    
+    }
+    
+    .review .container .revinfo ul li i {
+    
+        font-size: 12px;
+    }
+    
+    
+    .review .container .revimage img {
+    
+        width: 95%;
+        height: 50%;
+    }
+    
+    
+}
+
+@media (max-width: 500px) {
+    nav .container .end{
+      width: 0%;  
+    }
+    nav .container .end ul li a{
+        
+        color: white;
+    }
+    .info {
+        
+    height: 60vh;
+        
+    }
+    nav .container .start{
+        position: relative;
+        left: 25px;
+    }
+    nav .container{
+        justify-content: center;
+    }
+    .head img {
+        width: 200px;
+        height: 100px;
+    }
+    
+    .head h1 {
+    
+        font-size: 40px;
+       
+    }
+    
+    .head p {
+    
+        font-size: 20px;
+      
+    }
+    
+    .buttons button {
+        padding: 10px;
+     
+    }
+    .info .container .datainfo {
+        
+        position: static;
+        
+
+    }
+    .info .container ul li button {
+
+       
+        width: 20px;
+        height: 20px;
+  
+    }
+    .info .container ul li button i {
+
+        font-size: 11px;
+    }
+    .datainfo{
+        gap: 15px;
+    }
+    
+    .imageinfo {
+        display: flex;
+        justify-content: center;
+        width: 50%;
+    }
+    
+    .datainfo h2 {
+        font-size: 20px;
+    
+    }
+    
+    .datainfo .noteinfo {
+
+        font-size: 15px;
+
+    }
+    
+    .datainfo .note2info {
+    
+        font-size: 10px;
+ 
+    }
+    
+    .review{
+        height: 50vh;
+    }
+    .review .container .revinfo {
+
+        width: 50%;
+        gap: 10px;
+    }
+    
+    .review .container .revinfo h2 {
+    
+        font-size: 20px;
+    
+    }
+    
+    .review .container .revinfo p {
+        font-size: 10px;
+        
+    }
+    
+    .review .container .revinfo .revnote {
+
+        font-size: 15px;
+      
+    }
+    
+    .review .container .revinfo ul {
+        gap: 10px;
+ 
+    }
+    
+    .review .container .revinfo ul li {
+
+        gap: 15px;
+        font-size: 10px;
+    
+    }
+    
+    .review .container .revinfo ul li i {
+    
+        font-size: 10px;
+    }
+    
+    
+    .review .container .revimage img {
+    
+        width: 90%;
+        height: 40%;
+    }
+    .sec ul li {
+
+        font-size: 10px;
+        padding: 5px;
+    
+    }
+    .sec h3{
+        font-size: 15px;
+    }
+    .sec p{
+        font-size: 10px;
+    }
+    .menu .container .mid .t .meal p {
+
+        font-size: 11px;
+    
+    }
+    
+    .menu .container .mid .t .meal h4 {
+    
+        font-size: 18px;
+       
+    }
+    .banner2 .container .top{
+        gap: 30px;
+    }
+    .banner2 .container .top i{
+    
+        font-size: 30px;
+    }
+    .banner2 .container .top h3{
+    
+        font-size: 20px;
+    }
+    .banner2 .container .submid1{
+    
+        font-size: 17px;
+    }
+    .banner2 .container .mid2{
+
+        gap: 15px;
+    }
+    .banner2 .container .mid2 p:nth-of-type(1){
+
+        font-size: 15px;
+    }
+    .banner2 .container .mid2 p:nth-of-type(2){
+
+        font-size: 18px;
+    }
+    footer .container .subfooter img {
+        width: 300px;
+        height: 150px;
+    
+    }
+    
+    
+    footer .container .subfooter p {
+    
+        font-size: 15px;
+      
+    }
+    
+    footer .container .subfooter button {
+    
+        width: 40px;
+        height: 40px;
+    }
+}
+
